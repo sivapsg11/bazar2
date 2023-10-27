@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        outline: 0px;
+    }
+    .nav1{
+        width: 100%;
+        height: 8vh;
+        background-color: rgb(230, 57, 129);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;box-sizing: border-box;
+        border-bottom: 1px solid grey;
+    }
+    .nav1 .left{
+        width: 50%;
+        height:70%;
+        margin-left: 3%;
+        display: flex;
+        align-items: center;
+    }
+    .left .img{
+        width: 25%;
+        height: 80%;
+    }
+    .left img{
+        width: 100%;
+        height: 100%;
+    }
+    .left .srh{
+        width:80% ;
+        height:80%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+    }
+    .srh input{
+        width: 70%;
+        height:100%;
+        padding-left: 10%;
+        padding-right: 5%;
+        border: none;
+        color: rgb(6, 6, 6);
+    
+    }
+    .srh .a{
+        position: absolute;
+        left: 4%;
+        top:10px; 
+        
+    }
+    .srh .b{
+        position: absolute;
+        right: 18%;
+        top: 10px;
+    }
+    .srh button{
+        width: 30%;
+        height: 100%;
+        color: rgba(0, 0, 0, 0.808);
+        background-color: rgb(52, 188, 212);
+        border: none;
+        border-radius: 3px;
+        
+        
+
+    }
+    .srh button:hover{
+        box-sizing: border-box;
+        background-color: brown;
+        color: blanchedalmond;
+        border-bottom: 1px rgb(8, 8, 8) solid;
+    }
+    .nav1 .right{
+        width: 35%;
+        height: 70%;
+        margin-right: 1%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        
+    }
+    .nav1 .right .img{
+        width: 30%;
+        height: 80%;
+    }
+    .right img{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 2px 2px 2px rgb(13, 13, 13);
+    }
+    .right .a{
+        position: absolute;
+        left: 50%;
+    }
+    .right .b{
+        position: absolute;
+        right: 25%;
+    }
+    .nav2{
+        width: 100%;
+        height: 3vh;
+        
+    }
+    .nav2 div{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 1%;
+
+    }
+    .nav2 div p{
+        font-size: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .ban{
+        width: 100%;
+        height: 89vh;
+        background-image: url("ban\ img.webp");
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;position: relative;
+    }
+    .ban .ban1{
+        width: 80%;
+        height: 90%;
+       
+    }
+    .ban1>nav{
+        width: 100%;
+        height: 10%;
+        background-image: url("abstract-watercolour.jpg");
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:3px ;
+        box-shadow: 0px 0px 10px rgb(6, 6, 6);
+
+    }
+    .ban1 nav div{
+        width: 15%;
+        height: 60%;
+        background-color: brown;
+        text-align: center;
+        font-size: 25px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 1px 1px 5px black;
+
+    }
+    .ban1 nav p{
+        color: bisque;
+    }
+    .ban1 .ban11{
+        width: 100%;
+        height:90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ban11 div{
+        width: 23%;
+        height: 95%;
+        background-color:white;
+        border-radius: 3px;
+        border-radius:3px ;
+        box-shadow: 0px 0px 3px rgb(6, 6, 6);
+    }
+    .w nav{
+        width: 30%;
+        height: 4%;
+        background-color:brown;
+        text-align: center;
+        display: flex;align-items: center;justify-content: center;
+        border-bottom-right-radius: 5px;
+        color: beige;
+        font-family: 'Josefin Sans', sans-serif;
+       
+    }
+
+    .w .img {
+        width: 100%;
+        height: 60%;
+    }
+    .w img{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .w{
+        text-align: center;
+        
+     
+    }
+    .w .m1{
+        width: 100%;
+        height: 30%;
+        
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+
+    footer{
+        width: 100%;
+        height: 6%;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center; font-family: 'Josefin Sans', sans-serif;
+        box-shadow: 0px 0px 2px black;
+    }
+    .w :hover{
+        cursor: pointer;
+    }
+    .w .n{
+        font-size: 15px;
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        
+    }
+    .w .i{
+        font-size: 13px;
+        color: rgb(67, 210, 115);font-family: 'Josefin Sans', sans-serif;
+    }
+    .w  .icon1{
+        color:rgb(237, 237, 9);
+        font-size: 15px;
+        text-shadow: 0px 0px 2px black;
+    }
+    .w .icon2{
+        color:blue;
+        font-size: 15px;
+        text-shadow: 0px 0px 2px black;
+    }
+    .w .r{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+
+    }
+    .ban .chat{
+        position: absolute;
+        bottom: 50px;
+        right: 80px;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 30px;
+        position: fixed;
+        color:chartreuse;
+        width: 60px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(14, 14, 14);
+    }
+    .chat:hover{
+        color:white;
+        cursor:pointer;
+    }
+ 
+
+</style>
+
+</head>
+<body>
+    <nav class="nav1">
+        <div class="left">
+            <div class="img"><img src="mamaearth-logo.png"/></div>
+            <div class="srh"><input type="text" placeholder="serch for product"/><i class="a fa-brands fa-searchengin"></i><button><i class="b fa-brands fa-searchengin"><h> </h></i>search</button></div>
+        </div>
+        <div class="right">
+            <div class="img"><img src="nav 2img.jpg"/></div>
+            <a><i class="a fa-solid fa-cart-shopping"></i>Cart</a>
+            <a><i class="b fa-solid fa-user"></i>LogIn</a>
+        </div>
+    </nav>
+    <nav class="nav2">
+        <div>
+            <p>HOME</p>
+            <p>BEAUTY</p>
+            <p>HAIR</p>
+            <p>FACE</p>
+            <p>BODY</p>
+            <p>MAKEUP</p>
+            <p>BABY</p>
+            <p>GIFTS</p>
+            <p>ALL PRODUCTS</p>
+            <P>BLOG</P>
+            <P>PLANT GOODNESS</P>
+            <P>STORE LOCATOR</P>
+            
+        </div>
+    </nav>
+    <div class="ban">
+        
+        <div class="ban1">
+            <nav>
+                <div><p>Sunscreens</p></div>
+            </nav>
+            <div class="ban11">
+                <div class="w">
+                    <nav>Bestseller</nav>
+                    <div class="img"><img src="vit-c-glow-sunscreen1 - Copy.avif" /></div>
+                    <div class="m1">
+                        <p class="n"><b>Vitamin C Daily Glow Sunscreen with Vitamin C & Turmeric for Sun Protection & Glow - 50 g </b></p>
+                        <h class="i">SPF 50 & PA+++ Protection | Adds Natural Glow</h>
+                        <p class="r"><i class="icon1 fa-solid fa-star"></i>3.4 <i class="icon2 fa-solid fa-circle-check"></i>360reviews</p>
+                        <p class="n">$300</p>
+                    </div>
+                    <footer>ADD TO CART</footer>
+
+                </div>
+                <div class="w">
+                    <nav>Bestseller</nav>
+                    <div class="img"><img src="vit-c-glow-sunscreen1 - Copy.avif" /></div>
+                    <div class="m1">
+                        <p class="n"><b>Vitamin C Daily Glow Sunscreen with Vitamin C & Turmeric for Sun Protection & Glow - 50 g </b></p>
+                        <h class="i">SPF 50 & PA+++ Protection | Adds Natural Glow</h>
+                        <p class="r"><i class="icon1 fa-solid fa-star"></i>3.4 <i class="icon2 fa-solid fa-circle-check"></i>360reviews</p>
+                        <p class="n">$300</p>
+                    </div>
+                    <footer>ADD TO CART</footer>
+                </div>
+                <div class="w">
+                    <nav>Bestseller</nav>
+                    <div class="img"><img src="vit-c-glow-sunscreen1 - Copy.avif" /></div>
+                    <div class="m1">
+                        <p class="n"><b>Vitamin C Daily Glow Sunscreen with Vitamin C & Turmeric for Sun Protection & Glow - 50 g </b></p>
+                        <h class="i">SPF 50 & PA+++ Protection | Adds Natural Glow</h>
+                        <p class="r"><i class="icon1 fa-solid fa-star"></i>3.4 <i class="icon2 fa-solid fa-circle-check"></i>360reviews</p>
+                        <p class="n">$300</p>
+                    </div>
+                    <footer>ADD TO CART</footer>
+                </div>
+                <div class="w">
+                    <nav>Bestseller</nav>
+                    <div class="img"><img src="vit-c-glow-sunscreen1 - Copy.avif" /></div>
+                    <div class="m1">
+                        <p class="n"><b>Vitamin C Daily Glow Sunscreen with Vitamin C & Turmeric for Sun Protection & Glow - 50 g </b></p>
+                        <h class="i">SPF 50 & PA+++ Protection | Adds Natural Glow</h>
+                        <p class="r"><i class="icon1 fa-solid fa-star"></i>3.4 <i class="icon2 fa-solid fa-circle-check"></i>360reviews</p>
+                        <p class="n">$300</p>
+                    </div>
+                    <footer>ADD TO CART</footer>
+                </div>
+                
+            </div>
+        </div>
+    <i class="chat fa-solid fa-comment-dots"></i>
+    </div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, assumenda exercitationem distinctio modi perspiciatis fugit libero tenetur illo esse officiis aut ab temporibus ducimus explicabo? Laboriosam iusto earum architecto quos delectus aliquam sequi laudantium harum quia eveniet, consequuntur, nihil beatae aut rerum magni asperiores molestias dicta. Autem, eaque vitae! Maiores, fuga. Dolorum porro voluptates ullam aperiam eveniet aut! Ullam reiciendis facere aut fuga culpa necessitatibus animi esse. Officiis consequatur sint autem iure eligendi, adipisci repudiandae rerum nihil quibusdam porro illum quae qui aspernatur obcaecati, dolor tempore expedita labore beatae cupiditate molestias sunt excepturi! Eum aut similique alias in laborum provident facilis mollitia iste culpa illo iure maxime a commodi eligendi nam, iusto quod id, quaerat ab sunt! Quod consequatur consequuntur non ipsa molestiae dolorem. Ex, optio expedita facilis eaque voluptatibus sint! Atque quae ipsa hic numquam iusto, saepe itaque molestias dolor sunt ipsum aperiam impedit dolores doloremque inventore in accusamus iste ipsam sed dolorem? Aspernatur adipisci enim praesentium alias iure doloribus natus, dolore quia delectus vitae, consectetur officia magni. Cum repellat tempora unde perspiciatis beatae ab vel in mollitia eligendi aliquam! Vitae, nobis! Assumenda, facere ducimus, labore voluptates temporibus ut ratione iusto reprehenderit placeat debitis consequuntur culpa neque maxime voluptatibus nemo voluptate quaerat, praesentium eos exercitationem! Quos fugiat voluptate unde, sit soluta expedita, maiores dolore itaque harum ex adipisci nisi! Perspiciatis iusto laudantium consequuntur, enim amet praesentium quo alias officiis dicta dolores, facere distinctio. Sapiente accusamus cupiditate veritatis animi asperiores perferendis voluptatibus illum quia modi optio explicabo libero ex exercitationem voluptates, velit ab suscipit similique necessitatibus obcaecati quas molestias atque nemo beatae vitae! Maiores mollitia ex consequuntur ullam voluptatum assumenda vel nulla eaque nemo eveniet rerum officiis excepturi ipsa quae laboriosam quia nisi illo sequi deleniti repudiandae enim, dolor pariatur, earum inventore. Officia eos totam amet possimus eius neque necessitatibus corporis molestiae et nisi omnis perferendis, culpa ad veritatis quis alias quos sequi praesentium explicabo eum deleniti ab. Hic natus eligendi totam. Impedit dolore fugiat, a sint perspiciatis praesentium incidunt maiores eveniet. Dicta necessitatibus eligendi eum molestiae alias sit nesciunt omnis perferendis aliquid illum! Reiciendis dolorem corrupti hic alias voluptatum? Quas delectus adipisci nesciunt architecto laudantium dolorem doloribus numquam dolore velit, maiores optio provident, soluta illo id earum officia quos eos. Explicabo placeat tenetur exercitationem aliquid quia vel suscipit quidem consectetur nam eveniet, temporibus laborum facilis quas fugit, hic numquam alias architecto! Dolorem doloribus soluta molestias est? Molestias accusantium ducimus excepturi hic aliquid. Commodi laudantium explicabo eveniet praesentium ut tenetur sequi magnam similique corporis asperiores. Doloribus possimus rem est cum similique vero perspiciatis repellat quae ipsum labore? Saepe dignissimos placeat eius harum quod non, dolorum explicabo deleniti adipisci consectetur nobis recusandae error eligendi quasi animi necessitatibus vitae tempore soluta rem dolorem quos quas vero? Porro cupiditate assumenda facere aspernatur, excepturi nobis consequatur numquam provident dignissimos maxime earum eveniet cumque aperiam voluptate enim error cum sint iste, commodi dolor dolorum, magni est delectus esse. Cum molestiae culpa esse non, quia voluptate minus nihil reiciendis excepturi maxime vel labore distinctio temporibus quas neque voluptatem nam deleniti quae, eaque totam accusamus odio tempora aliquam. Placeat hic laboriosam officia? Ut nihil temporibus obcaecati odit consequatur, corrupti nam quas rem cupiditate ab magni ea alias omnis quam maiores quasi? Vitae, minus velit exercitationem inventore culpa possimus nihil nesciunt facilis doloremque mollitia, aliquam, harum adipisci ipsam ea quibusdam eveniet. Reprehenderit velit, numquam aliquid quidem nemo nobis aspernatur totam consectetur? At accusantium eligendi quae labore expedita ipsum molestias incidunt dignissimos neque aliquam debitis saepe consequuntur sint ducimus nostrum, voluptatum maxime animi, necessitatibus illo obcaecati? Ratione repellat facilis nostrum modi odio saepe, minima fugit ex natus suscipit. Tempore exercitationem eligendi aperiam perspiciatis dicta temporibus. Nihil dignissimos aut officiis et a fugit accusamus, laboriosam est, doloremque aliquid nisi quam velit illum eos molestias suscipit provident, at eligendi sapiente laborum laudantium iure? Voluptatibus aperiam ipsum voluptatem. Voluptatibus quo blanditiis ad at tempora ullam recusandae eveniet veritatis optio sed atque dolore repellendus iusto quis temporibus ratione alias saepe sunt sequi rerum debitis, error repudiandae! Blanditiis veniam exercitationem nobis deleniti quae aliquid reiciendis magni at, eaque nesciunt libero quidem debitis voluptatem labore quasi esse id maxime sint mollitia excepturi error in ex quam iste? Earum quos nam cum consectetur soluta illum nulla culpa odit aut ullam nihil ipsum accusantium ad, nostrum, repudiandae excepturi quidem labore suscipit obcaecati aliquid impedit necessitatibus unde illo facilis. Commodi omnis ut dicta excepturi quas, rem dolores alias accusantium necessitatibus ipsa quod explicabo voluptas! Vel harum tempore doloribus commodi, fugit temporibus neque laboriosam placeat veritatis eum! Accusantium ratione reprehenderit nulla nam sit! Iusto, eum eligendi neque ipsa deserunt corporis quaerat adipisci nulla esse! Eius, unde! Voluptatibus asperiores modi repellendus deserunt laudantium laboriosam optio numquam? Optio omnis accusamus voluptates voluptate sapiente sint assumenda odit officia voluptas, recusandae quibusdam corporis unde repellat tenetur reiciendis, modi dolor aperiam. Eveniet soluta at itaque vitae nisi. Atque, vero, fugiat eius incidunt praesentium ipsam ratione nulla quo facere ipsa ut iste eaque dolorum esse? Quis consequatur doloremque quibusdam delectus laudantium porro, eveniet adipisci sunt omnis dignissimos itaque? Quia officia itaque pariatur, qui ipsam animi eius porro asperiores laborum, quasi sint incidunt quisquam fuga praesentium exercitationem architecto voluptas voluptatum debitis? Veritatis error quas aperiam accusamus tenetur beatae quibusdam placeat assumenda, in praesentium. Facilis molestiae voluptatem id assumenda ab voluptatibus. Veniam facilis quas voluptatibus at doloribus voluptas minus et dolore eveniet id, ipsa, ab voluptate voluptates vero dolorem quasi ut rem. Laborum doloribus repellat explicabo quasi fugiat vero assumenda accusantium esse eligendi quia consequuntur laboriosam ea, nesciunt aperiam exercitationem recusandae et nemo id, nobis iste, fugit quod. Quasi officiis rem repellat temporibus modi ipsam similique mollitia corporis perspiciatis numquam voluptatem sed dolorem explicabo aliquam delectus excepturi placeat distinctio suscipit, minima sequi obcaecati fugiat dicta accusamus. Beatae, veritatis. Et adipisci consectetur quam eaque necessitatibus, sapiente delectus culpa deleniti sequi exercitationem, harum quis sit enim iste ipsam! Praesentium animi numquam fuga molestias odit earum blanditiis impedit velit harum nulla ipsa in asperiores quibusdam, nobis aliquam sit quos itaque veniam eligendi, voluptatum ipsam. Debitis voluptates ipsam laudantium necessitatibus voluptas!</div>
+
+    
+</body>
+</html>
